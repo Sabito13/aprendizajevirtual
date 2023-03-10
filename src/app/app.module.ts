@@ -10,6 +10,11 @@ import { CursosViewComponent } from './cursos-view/cursos-view.component';
 import { CursoContenidosViewComponent } from './curso-contenidos-view/curso-contenidos-view.component';
 import { CursoContenidoComponent } from './curso-contenido/curso-contenido.component';
 import { UsuarioComponent } from './usuario/usuario.component';
+import { RegisterComponent } from './register/register.component';
+import { CourseViewComponent } from './course-view/course-view.component';
+import { CourseContentComponent } from './course-content/course-content.component';
+import { CourseContentContainerComponent } from './course-content-container/course-content-container.component';
+import { AuthViewComponent } from './auth-view/auth-view.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { UsuarioComponent } from './usuario/usuario.component';
     CursosViewComponent,
     CursoContenidosViewComponent,
     CursoContenidoComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    RegisterComponent,
+    CourseViewComponent,
+    CourseContentComponent,
+    CourseContentContainerComponent,
+    AuthViewComponent
   ],
   imports: [
     BrowserModule,
