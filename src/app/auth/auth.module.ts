@@ -14,6 +14,9 @@ import { AuthViewComponent } from './pages/auth-view/auth-view.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    AuthViewComponent
   ]
 })
 export class AuthModule { }

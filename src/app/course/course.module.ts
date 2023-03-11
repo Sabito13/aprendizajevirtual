@@ -15,6 +15,9 @@ import { CourseContentContainerComponent } from './components/course-content-con
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    CourseViewComponent
   ]
 })
 export class CourseModule { }
