@@ -1,1 +1,36 @@
-<p>register works!</p>
+<div>
+    <form action="">
+        <div>
+            <label for="Username">Username (document)</label>
+            <input type="number" name="Username" id="Username" placeholder="Username"
+            [(ngModel)]="username">
+        </div>
+
+        
+
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="password"
+        [(ngModel)]="password">
+    </div>
+
+
+
+
+    <div>
+        <label for="firstname">First Name </label>
+        <input type="text" name="firstname" id="firstname" placeholder="firstname"
+        [(ngModel)]="firstname">
+    </div>
+
+    <div>
+        <label for="lastname">Last Name </label>
+        <input type="text" name="lastname" id="lastname" placeholder="lastname"
+        [(ngModel)]="lastname">
+    </div>
+
+
+   <button type="submit" (click)="registerUser()">Register</button>
+
+    </form>
+</div>

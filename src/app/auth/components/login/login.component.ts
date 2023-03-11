@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+
+username:string="";
+password:string="";
+private usuarioLogueado:boolean | undefined;
+
+
+loginUser(){
+  console.log(this.username," ",this.password)
+}
 }
