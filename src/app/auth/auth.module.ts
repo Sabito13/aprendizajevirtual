@@ -12,7 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     RegisterComponent,
     AuthViewComponent
-  ],
+  ], 
   imports: [
     CommonModule,
     FormsModule,

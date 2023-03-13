@@ -15,5 +15,4 @@ export class AuthenticationService {
     return this.http.post<HttpResponse<Object>>(`${this.apiServerUrl}/new`,uc);
   }
 
-
 }
