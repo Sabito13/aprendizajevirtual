@@ -1,0 +1,10 @@
+.contents-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px;
+}
+
+.contents-item{
+    text-align: center;
+
+}

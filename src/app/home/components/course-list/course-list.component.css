@@ -1,0 +1,13 @@
+.course-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px;
+        background-color: rgb(78, 33, 33);
+        color: bisque;
+        text-align: center;
+}
+
+.course-item{
+    margin-bottom: 10px;
+    background-color: rgb(138, 59, 59);
+}
