@@ -1,4 +1,4 @@
 export const enviroment = {
     production:false,
-    apiBaseUrl:''
+    apiBaseUrl:'https://campusvirual-production.up.railway.app'
 };
