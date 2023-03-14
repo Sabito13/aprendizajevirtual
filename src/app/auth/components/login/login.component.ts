@@ -18,14 +18,8 @@ constructor(private authService:AuthenticationService ){}
 
 loginUser(){
   console.log(this.username," ",this.password)
-  
-  this.authService.loginUser({username:this.username,password:this.password}).subscribe( (response:any) =>{
-    const headers = response.getHeaders();
-    const names= headers.getAll();
-    names.forEach( (headerName:any) => {
-      console.log(headerName,headers.get(headerName));
-    });
-  })
+  this.authService.loginUser(this.username,this.password)
+   
 }
 
 ngOnInit(){

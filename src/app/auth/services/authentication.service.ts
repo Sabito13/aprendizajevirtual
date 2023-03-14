@@ -1,18 +1,23 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpResponse } from '@angular/common/http';
-import { UserCredentials } from '../model/UserCredentials';
-import { Observable } from 'rxjs';
+import { AuthApiService } from 'src/app/apiRestServices/auth-api.service';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthenticationService {
-  private apiServerUrl="http://ejemplo"
-  constructor(private http:HttpClient) { }
+constructor(private authApiService:AuthApiService){}
 
-  public loginUser(uc:UserCredentials):Observable<HttpResponse<Object>>
-  {
-    return this.http.post<HttpResponse<Object>>(`${this.apiServerUrl}/new`,uc);
+  loginUser(username:number,password:string){
+
+    this.authApiService.loginUserApi({username:username,password:password}).subscribe( 
+      (response:any) =>{
+      const headers = response.getHeaders();
+      const names= headers.getAll();
+      names.forEach( (headerName:any) => {
+        console.log(headerName,headers.get(headerName));
+      });
+    })
   }
 
 }
